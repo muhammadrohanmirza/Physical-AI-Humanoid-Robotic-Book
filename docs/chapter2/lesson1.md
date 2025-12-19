@@ -182,4 +182,4 @@ Sensors form the foundation of perception in Physical AI systems. Understanding 
 
 In the next lesson, we'll explore how to process and filter the raw data from these sensors to extract meaningful information for decision-making.
 
-[Previous: Chapter 2 Index](./index) | [Next: Lesson 2.2 - Data Processing and Filtering](./lesson2)
+[Chapter 2 Index](/docs/chapter2/) | [Next: Lesson 2.2 - Data Processing and Filtering](./lesson2)

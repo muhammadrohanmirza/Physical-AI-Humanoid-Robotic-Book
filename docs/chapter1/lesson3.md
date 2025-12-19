@@ -232,4 +232,4 @@ Action and control are essential components of Physical AI systems, enabling the
 
 With our foundation complete in Physical AI concepts, perception, and action, we'll next explore how to apply these concepts in real-world scenarios in the following chapter.
 
-[Previous: Lesson 1.2 - Perception in Physical AI Systems](./lesson2) | [Chapter 1 Index](./index)
+[Previous: Lesson 1.2 - Perception in Physical AI Systems](./lesson2) | [Chapter 1 Index](/docs/chapter1/)

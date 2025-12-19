@@ -395,4 +395,4 @@ Sensor fusion is a critical component of advanced Physical AI systems, enabling 
 
 With our understanding of sensing and perception in Physical AI systems, we'll next explore how these systems use this information to make decisions and take actions in the physical world.
 
-[Previous: Lesson 2.2 - Data Processing and Filtering](./lesson2) | [Next: Chapter 2 Index](./index)
+[Previous: Lesson 2.2 - Data Processing and Filtering](./lesson2) | [Chapter 2 Index](/docs/chapter2/)
