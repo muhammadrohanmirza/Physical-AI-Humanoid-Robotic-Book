@@ -1,55 +1,66 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- 
+Sync Impact Report:
+- Version change: n/a → 1.0.0
+- Modified principles: New constitution created with 6 principles
+- Added sections: Vision, Core Principles, Success Criteria, Constraints, Stakeholders, Brand Voice, and Governance
+- Removed sections: None
+- Templates requiring updates: N/A
+- Follow-up TODOs: None
+-->
+
+# Physical AI Book Constitution
+
+## Vision
+
+To create an accessible, comprehensive guide that demystifies Physical AI for beginners and intermediate learners, combining theoretical foundations with hands-on experimentation to enable readers to understand, implement, and innovate in the field of AI interacting with physical systems.
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Hands-On Learning Approach
+Every concept in the book must be accompanied by practical exercises and examples; readers should be able to implement what they learn immediately through guided hands-on activities and experiments.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Beginner-Friendly Accessibility
+Content must be accessible to beginners with step-by-step explanations, visual aids, and minimal prerequisites; complex concepts should be broken down into digestible segments with clear progression paths.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Docusaurus-Based Documentation
+All content and documentation must be structured using Docusaurus to ensure consistent navigation, search capabilities, and responsive design across devices.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Real-World Application Focus
+Every chapter should connect theoretical concepts to real-world physical AI applications, demonstrating how principles translate to practical implementations in robotics, simulation, or physical systems.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Interactive Engagement
+Content should encourage reader interaction through exercises, thought experiments, code examples, and challenges that reinforce learning objectives.
 
-### [PRINCIPLE_6_NAME]
+### Iterative Knowledge Building
+Concepts should build progressively from fundamental principles to advanced topics, ensuring each builds upon previously established knowledge without gaps.
 
+## Success Criteria
 
-[PRINCIPLE__DESCRIPTION]
+- Reader feedback surveys showing comprehension and satisfaction
+- Completion rates of hands-on exercises
+- GitHub activity and contributions to associated code repositories
+- Number of successful implementations of book concepts by readers
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Constraints
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- Target audience limitations requiring simplified explanations without sacrificing technical accuracy
+- Docusaurus formatting requirements constraining presentation options
+- Need for balance between theoretical depth and practical accessibility
+- Resource limitations for creating physical demonstrations and simulations
+- Time constraints for content development and review cycles
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Stakeholders
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- Primary: Beginners and intermediate learners interested in Physical AI
+- Secondary: Educators using the book as course material
+- Contributors: Technical writers, subject matter experts, and community members
+- Maintainers: Core development team responsible for ongoing content updates
+
+## Brand Voice
+
+Clear, approachable, and technically accurate. The tone should be encouraging to newcomers while maintaining credibility for more experienced practitioners. Language should favor simplicity over complexity when possible, always explain jargon, and maintain enthusiasm for the possibilities of Physical AI.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all content creation and documentation efforts; All contributors must comply with these principles; Amendments require team consensus and stakeholder approval.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-10 | **Last Amended**: 2025-12-10

@@ -1,0 +1,397 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* You can override the default Docusaurus variables here. */
+:root {
+  --ifm-color-primary: #2e8b57; /* Sea Green - represents the physical world connection */
+  --ifm-color-primary-dark: #28794c;
+  --ifm-color-primary-darker: #266e47;
+  --ifm-color-primary-darkest: #1f5a3a;
+  --ifm-color-primary-light: #36a161;
+  --ifm-color-primary-lighter: #4cb373;
+  --ifm-color-primary-lightest: #6bc890;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Accessibility color contrast enhancements */
+  --ifm-color-emphasis-100: rgba(0, 0, 0, 0.05);
+  --ifm-color-emphasis-200: rgba(0, 0, 0, 0.1);
+  --ifm-color-emphasis-300: rgba(0, 0, 0, 0.2);
+  --ifm-color-emphasis-400: rgba(0, 0, 0, 0.4);
+  --ifm-color-emphasis-500: rgba(0, 0, 0, 0.6);
+  --ifm-color-emphasis-600: rgba(0, 0, 0, 0.8);
+  --ifm-color-emphasis-700: rgba(0, 0, 0, 0.86);
+  --ifm-color-emphasis-800: rgba(0, 0, 0, 0.92);
+  --ifm-color-emphasis-900: rgba(0, 0, 0, 0.96);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #3cb371; /* Medium Sea Green */
+  --ifm-color-primary-dark: #36a161;
+  --ifm-color-primary-darker: #2e8b57;
+  --ifm-color-primary-darkest: #28794c;
+  --ifm-color-primary-light: #4cb373;
+  --ifm-color-primary-lighter: #6bc890;
+  --ifm-color-primary-lightest: #7fd6a2;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Dark mode accessibility enhancements */
+  --ifm-color-emphasis-100: rgba(255, 255, 255, 0.05);
+  --ifm-color-emphasis-200: rgba(255, 255, 255, 0.1);
+  --ifm-color-emphasis-300: rgba(255, 255, 255, 0.2);
+  --ifm-color-emphasis-400: rgba(255, 255, 255, 0.4);
+  --ifm-color-emphasis-500: rgba(255, 255, 255, 0.6);
+  --ifm-color-emphasis-600: rgba(255, 255, 255, 0.8);
+  --ifm-color-emphasis-700: rgba(255, 255, 255, 0.86);
+  --ifm-color-emphasis-800: rgba(255, 255, 255, 0.92);
+  --ifm-color-emphasis-900: rgba(255, 255, 255, 0.96);
+
+  /* Ensure proper text color in dark mode */
+  --ifm-color-content: var(--ifm-color-emphasis-900);
+  --ifm-color-content-inverse: var(--ifm-color-emphasis-0);
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #0d1117;
+}
+
+/* Custom styles for Physical AI Book */
+.lesson-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.exercise-box {
+  background-color: #f0f8f5;
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #d1e7dd;
+}
+
+.exercise-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.code-example {
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 3px solid #d8d8d8;
+  overflow-x: auto;
+}
+
+/* Special styling for concept boxes */
+.concept-highlight {
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.key-concept {
+  font-weight: bold;
+  color: #0284c7;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Real-world application boxes */
+.real-world-box {
+  border: 1px solid #bbf0d6;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: #f0fdf7;
+}
+
+.real-world-title {
+  font-weight: bold;
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design for all devices */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .lesson-content {
+    padding: 1rem 0.5rem;
+  }
+
+  .exercise-box, .concept-highlight, .real-world-box {
+    padding: 0.75rem;
+    margin: 1rem 0;
+  }
+
+  .code-example {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+
+  /* Make sure text remains readable on small screens */
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .lesson-content {
+    padding: 2rem 1rem;
+  }
+
+  .exercise-box, .concept-highlight, .real-world-box {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .lesson-content {
+    max-width: 1000px;
+  }
+}
+
+/* Accessibility improvements */
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus indicators for better accessibility */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+details:focus,
+summary:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --ifm-color-emphasis-100: rgba(0, 0, 0, 0.2);
+    --ifm-color-emphasis-200: rgba(0, 0, 0, 0.3);
+    --ifm-color-emphasis-300: rgba(0, 0, 0, 0.4);
+    --ifm-color-emphasis-400: rgba(0, 0, 0, 0.5);
+    --ifm-color-emphasis-500: rgba(0, 0, 0, 0.7);
+    --ifm-color-emphasis-600: rgba(0, 0, 0, 0.85);
+    --ifm-color-emphasis-700: rgba(0, 0, 0, 0.9);
+    --ifm-color-emphasis-800: rgba(0, 0, 0, 0.95);
+    --ifm-color-emphasis-900: rgba(0, 0, 0, 1);
+  }
+
+  [data-theme='dark'] {
+    --ifm-color-emphasis-100: rgba(255, 255, 255, 0.2);
+    --ifm-color-emphasis-200: rgba(255, 255, 255, 0.3);
+    --ifm-color-emphasis-300: rgba(255, 255, 255, 0.4);
+    --ifm-color-emphasis-400: rgba(255, 255, 255, 0.5);
+    --ifm-color-emphasis-500: rgba(255, 255, 255, 0.7);
+    --ifm-color-emphasis-600: rgba(255, 255, 255, 0.85);
+    --ifm-color-emphasis-700: rgba(255, 255, 255, 0.9);
+    --ifm-color-emphasis-800: rgba(255, 255, 255, 0.95);
+    --ifm-color-emphasis-900: rgba(255, 255, 255, 1);
+  }
+
+  .exercise-box,
+  .concept-highlight,
+  .real-world-box {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Better text readability */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.markdown p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.markdown a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.markdown a:hover {
+  text-decoration-thickness: 3px;
+}
+
+/* Better code block accessibility */
+.prism-code {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+/* Better table accessibility */
+.markdown table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.markdown table th {
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+/* Keyboard navigation improvements */
+.menu, .navbar-sidebar {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus styles for interactive elements */
+details summary {
+  cursor: pointer;
+}
+
+/* Better contrast for code blocks */
+[data-theme='light'] .prism-code {
+  background-color: #24292f;
+  color: #f6f8fa;
+}
+
+[data-theme='dark'] .prism-code {
+  background-color: #e6edf3;
+  color: #0d1117;
+}
+
+/* Improve focus visibility for all focusable elements */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible .focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Better contrast for links */
+[data-theme='light'] .markdown a {
+  color: #0969da;
+}
+
+[data-theme='dark'] .markdown a {
+  color: #58a6ff;
+}
+
+/* Improve readability of inline code */
+.markdown code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 0.85em;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 6px;
+}
+
+/* Better accessibility for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve accessibility of navigation elements */
+.navbar__item,
+.navbar__link,
+.menu__link,
+.table-of-contents__link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+/* Better contrast for buttons */
+.button {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  vertical-align: middle;
+}
+
+/* Ensure button text is white in light mode when using secondary variant */
+[data-theme='light'] .button--secondary {
+  color: white !important;
+}
+
+/* Ensure sufficient color contrast for all themes */
+:root {
+  --ifm-color-content: var(--ifm-color-emphasis-900);
+  --ifm-color-content-inverse: var(--ifm-color-emphasis-0);
+  --ifm-color-secondary: var(--ifm-color-emphasis-700);
+  --ifm-color-secondary-dark: var(--ifm-color-emphasis-800);
+  --ifm-color-secondary-darker: var(--ifm-color-emphasis-900);
+  --ifm-color-secondary-darkest: #000;
+  --ifm-color-secondary-light: var(--ifm-color-emphasis-600);
+  --ifm-color-secondary-lighter: var(--ifm-color-emphasis-400);
+  --ifm-color-secondary-lightest: var(--ifm-color-emphasis-200);
+}

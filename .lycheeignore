@@ -1,0 +1,13 @@
+# URLs to ignore during link checking
+
+# Local relative links
+/*.md
+#docs/**
+/docs/**
+/chapter1/**
+/exercises/**
+/tutorials/**
+
+# Placeholder URLs
+https://your-docusaurus-site.example.com
+https://github.com/PhysicalAI/physical-ai-book/edit/main/
